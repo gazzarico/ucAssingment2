@@ -1,0 +1,73 @@
+	body
+	{
+		width: 800px;
+		height: auto;
+		color: azure;
+		font-family: 'Didact Gothic', sans-serif;
+		font-size: 12pt;
+		font-weight: 200;
+		color: black;
+        text-align:left;
+        margin-left: 300px;
+        background-color: aqua;
+        
+        /*background-image: url(images/money.png); background-size: 300px; background-repeat: no-repeat; background-position:bottom;  */
+	}
+
+    div{
+    background-color: bisque;
+    background-image: url(images/money.png);
+        background-size: contain;
+        background-repeat: no-repeat; background-position:top;
+        
+    
+    }
+	
+	
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+        color: black;
+	}
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	ol, ul
+	{
+		padding: 0;
+		list-style: none;
+	}
+	
+	p
+	{
+		line-height: 180%;
+	}
+	
+	strong
+	{
+	}
+	
+	a
+	{
+		color: #ee0000;
+	}
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+	
+	
+
+
+
+
+
+
+
+
+
