@@ -10,7 +10,7 @@
 
     <body>
         <h1>Weekly Expenses</h1>
-        <p>Please login to continue....</p>
+        <p>Please login continue....</p>
         <?php include "login.php"; ?>
 
     </body>

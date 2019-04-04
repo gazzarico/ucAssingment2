@@ -1,5 +1,7 @@
 <?php 
 require "../config.php"; 
+
+//the variables are used to calculate the budget costings.
 $sum = 0;
 $budget =0;
 $remaining =0;

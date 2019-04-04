@@ -19,7 +19,7 @@
             $statement = $connection->prepare($sql);
             
             // bind the id to the PDO
-            $statement->bindValue(':id', $id);
+            $statement->bindValue('id', $id);
             
             // execute the statement
             $statement->execute();
@@ -30,25 +30,42 @@
         } catch(PDOException $error) {
             // if there is an error, tell us what it is
             echo $sql . "<br>" . $error->getMessage();
+            
         }
     };
 
-    // This code runs on page load
-    try {
+    	try {
+
+        //Connect to the database
+
         $connection = new PDO($dsn, $username, $password, $options);
 		
-        // SECOND: Create the SQL 
+
+        //Create the SQL 
+
         $sql = "SELECT * FROM costs";
+ 
         
-        // THIRD: Prepare the SQL
+        //Prepare the SQL
+
         $statement = $connection->prepare($sql);
+
         $statement->execute();
-        
-        // FOURTH: Put it into a $result object that we can access in the page
+
+        //Put it into a $result object that we can access in the page
+
         $result = $statement->fetchAll();
-    } catch(PDOException $error) {
-        echo $sql . "<br>" . $error->getMessage();
-    }
+      
+
+	} catch(PDOException $error) {
+
+        // if there is an error, tell us what it is
+
+		echo $sql . "<br>" . $error->getMessage();
+
+	}	
+
+?>
 
 
 

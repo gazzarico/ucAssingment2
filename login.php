@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
     // include the config file that we created before
 
     require "../config.php"; 
-    require "../common.php";
+    //require "../common.php";
     
 
     //try to connect to the database. 
@@ -35,14 +35,13 @@ if (isset($_POST['submit'])) {
 
         //if connects it will open the homepage otherwise throw an error message.
         header ('location: home.php');
-        
 
 
 	} catch(PDOException $error) {
-
         // if there is an error, tell us what it is
 
 		echo $error->getMessage();
+		
 
 	}	
 
@@ -68,6 +67,8 @@ if (isset($_POST['submit'])) {
     <input type="submit" name="submit" value="login">
 
     <!--this form is to collect a username and password.-->
+    
+    <p>help me obi wan kenobi!</p>
 
 </form>
 </div>
